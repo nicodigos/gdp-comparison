@@ -45,7 +45,9 @@ This app lets you explore and compare countries based on four key GDP indicators
 - **GDP Per Capita (Constant 2017 PPP):** Average output per person, adjusted for both inflation and purchasing power. Often used to compare living standards internationally.
 ''')
 
-country_list = st.multiselect('Countries', df_dict['df_total'].REF_AREA_NAME.unique())
+country_list = st.multiselect('Countries', 
+                              df_dict['df_total'].REF_AREA_NAME.unique(),
+                              default=['China', 'United States', 'Canada'])
 
 tab_names = ["GDP Per Capita 2015", "GDP Total 2015", 
             "GDP Per Capita PPP 2017", "GDP Total PPP 2017",]
