@@ -54,13 +54,22 @@ tab_names = ["GDP Per Capita 2015", "GDP Total 2015",
 
 tab1, tab2, tab3, tab4 = st.tabs(tab_names)
 
+number_message = """
+1e13 means:
+👉 1 × 10¹³ = 10,000,000,000,000
+
+This is ten trillion (in short scale, used in English-speaking countries).
+"""
+
 with tab1:
     st.pyplot(chart_creator(country_list, 'df_per_capita', tab_names[0]))
 with tab2:
     st.pyplot(chart_creator(country_list, 'df_total', tab_names[1]))
+    st.markdown(number_message)
 with tab3:
     st.pyplot(chart_creator(country_list, 'df_pc_ppp', tab_names[2]))
 with tab4:
     st.pyplot(chart_creator(country_list, 'df_ppp', tab_names[3]))
+    st.markdown(number_message)
 
 
