@@ -59,6 +59,9 @@ number_message = """
 👉 1 × 10¹³ = 10,000,000,000,000
 
 This is ten trillion (in short scale, used in English-speaking countries).
+
+1eⁿ means:
+👉 1 × 10ⁿ = the number 1 followed by n zeros (if n is positive), or a decimal with n digits after the point (if n is negative).
 """
 
 with tab1:
