@@ -61,7 +61,7 @@ number_message = """
 This is ten trillion (in short scale, used in English-speaking countries).
 
 1eⁿ means:
-👉 1 × 10ⁿ = the number 1 followed by n zeros (if n is positive), or a decimal with n digits after the point (if n is negative).
+👉 1 × 10ⁿ = the number 1 followed by n zeros (if n is positive as in this case).
 """
 
 with tab1:
