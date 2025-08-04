@@ -26,7 +26,7 @@ def chart_creator(country_list, df, title):
     
     plt.title(title)
     plt.xlabel('year')
-    plt.ylabel('value')
+    plt.ylabel('value USD')
     plt.xticks(rotation=85, fontsize=5)
    
 
